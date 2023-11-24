@@ -1,0 +1,524 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="Styles/fontawesome-free-6.4.2-web/css/all.css">
+    <link rel="stylesheet" href="Styles/General_Styles.css">
+    <link rel="stylesheet" href="Styles/Courses-Styles.css">
+    <link rel="icon" href="Images/uglogo.png">
+    <title>Undergraduate Courses</title>
+</head>
+<body>
+    <header>
+        <div class="head"> 
+            <div class="logo">
+                <img src="Images/logo.png" alt="">
+            </div>
+            <div class="menu-button" onclick="openNav()">
+                <button><i class="fas fa-bars"></i></button>
+            </div>
+        </div>
+        <nav class="nav">
+            <ul>
+                <li> <a href="UG-CS-Home.html">Home</a> </li>
+                <li> <a href="UG-CS-Events.html">Events</a> </li>                
+                <li> <a href="UG-CS-About.html">About</a> </li>                
+                <li> <a href="UG-CS-Research.html"><span class="nowrap">Research Groups</span></a> </li>
+            </ul>
+        </nav>
+    </header>
+    
+    
+    <main>
+        <div class="heading">
+             <h1>Undergraduate Courses</h1> 
+        </div>
+         
+         <div class="course-content">
+             <button class="level" onclick="dropDown('l100', '1100drop');">
+                 Level Hundred
+                 <div class="drop" id="1100drop"><i class="fa-solid fa-caret-down" style="color: #ffffff;"></i></div>
+             </button>
+             <div class="courses" id="l100">
+                 <h3>First Semester</h3>
+                 <table>
+                     <thead>
+                         <th>
+                             Course Code
+                         </th>
+                         <th>
+                             Course Title 
+                         </th>
+                     </thead>
+                     <tbody>
+                         <tr class="first">
+                             <td>UGRC 150</td>
+                             <td>Critical Thinking and Logical Reasoning</td>
+                         </tr>
+                         <tr>
+                             <td>MATH 121</td>
+                             <td>Algebra and Trigonometry</td>
+                         </tr>
+                         <tr>
+                             <td>MATH 123</td>
+                             <td>Vectors and Geometry</td>
+                         </tr>
+                         <tr>
+                             <td>DCIT 101</td>
+                             <td>Introduction to Computer Science</td>
+                         </tr>
+                         <tr>
+                             <td>DCIT 103</td>
+                             <td>Office Productivity Tools</td>
+                         </tr>
+                         <tr>
+                             <td>STAT 111</td>
+                             <td>Introduction to Statistics and Probability I</td>
+                         </tr>
+                     </tbody>
+                 </table>
+                 
+                 
+                 <h3>Second Semester</h3>
+                 <table>
+                     <thead>
+                         <th>
+                             Course Code
+                         </th>
+                         <th>
+                             Course Title 
+                         </th>
+                     </thead>
+                     <tbody>
+                         <tr class="first">
+                             <td>UGRC 110</td>
+                             <td>Academic Writing I</td>
+                         </tr>
+                         <tr>
+                             <td>UGRC 131-136</td>
+                             <td>Understanding Human Society</td>
+                         </tr>
+                         <tr>
+                             <td>MATH 122</td>
+                             <td>Calculus I</td>
+                         </tr>
+                         <tr>
+                             <td>MATH 126</td>
+                             <td>Algebra and Geometry</td>
+                         </tr>
+                         <tr>
+                             <td>DCIT 102</td>
+                             <td>Computer Hardware Fundamentals and Circuits</td>
+                         </tr>
+                         <tr>
+                             <td>DCIT 104</td>
+                             <td>Programming</td>
+                         </tr>
+                         <tr>
+                             <td>STAT 112</td>
+                             <td>Introduction to Statistics and Probability II</td>
+                         </tr>
+                     </tbody>
+                 </table>
+             </div>
+         </div>
+         
+           <div class="course-content">
+             <button class="level" onclick="dropDown('l200', '1200drop');">
+                 Level Two Hundred
+                 <div class="drop" id="1200drop"><i class="fa-solid fa-caret-down" style="color: #ffffff;"></i></div>
+             </button>
+             <div class="courses" id="l200">
+                 <h3>First Semester</h3>
+                 <table>
+                     <thead>
+                         <th>
+                             Course Code
+                         </th>
+                         <th>
+                             Course Title 
+                         </th>
+                     </thead>
+                     <tbody>
+                         <tr class="first">
+                             <td>UGRC 210</td>
+                             <td>Academic Writing II</td>
+                         </tr>
+                         <tr>
+                             <td>MATH 122</td>
+                             <td>Calculus II</td>
+                         </tr>
+                         <tr>
+                             <td>DCIT 201</td>
+                             <td>Programming I</td>
+                         </tr>
+                         <tr>
+                             <td>DCIT 203</td>
+                             <td>Digital and Logic Systems Design</td>
+                         </tr>
+                         <tr>
+                             <td>DCIT 205</td>
+                             <td>Multi Media and Web Design</td>
+                         </tr>
+                         <tr>
+                             <td>DCIT 207</td>
+                             <td>Computer Architecture & Organisation</td>
+                         </tr>
+                     </tbody>
+                 </table>
+                 
+                 
+                 <h3>Second Semester</h3>
+                 <table>
+                     <thead>
+                         <th>
+                             Course Code
+                         </th>
+                         <th>
+                             Course Title 
+                         </th>
+                     </thead>
+                     <tbody>
+                         <tr class="first">
+                             <td>UGRC 220</td>
+                             <td>Introduction to African Studies</td>
+                         </tr>
+                         <tr>
+                             <td>DCIT 202</td>
+                             <td>Mobile Application Development</td>
+                         </tr>
+                         <tr>
+                             <td>DCIT 204</td>
+                             <td>Data Structures & Algorithm I</td>
+                         </tr>
+                         <tr>
+                             <td>DCIT 206</td>
+                             <td>Systems Administration</td>
+                         </tr>
+                         <tr>
+                             <td>DCIT 208</td>
+                             <td>Software Engineering</td>
+                         </tr>
+                         <tr>
+                             <td>DCIT 212</td>
+                             <td>
+                                 Numerical and Computational Methods
+                             </td>
+                         </tr>                        
+                     </tbody>
+                 </table>
+             </div>
+         </div>
+         
+         
+           <div class="course-content">
+             <button class="level" onclick="dropDown('l300', '1300drop');">
+                 Level Three Hundred
+                 <div class="drop" id="1300drop"><i class="fa-solid fa-caret-down" style="color: #ffffff;"></i></div>
+             </button>
+             <div class="courses" id="l300">
+                 <h3>First Semester</h3>
+                 <table>
+                     <thead>
+                         <th>
+                             Course Code
+                         </th>
+                         <th>
+                             Course Title 
+                         </th>
+                     </thead>
+                     <tbody>
+                         <tr class="first">
+                             <td>DCIT 301</td>
+                             <td>Operating Systems</td>
+                         </tr>
+                         <tr>
+                             <td>DCIT 303</td>
+                             <td>Computer Networks</td>
+                         </tr>
+                         <tr>
+                             <td>DCIT 305</td>
+                             <td>Database Fundamentals</td>
+                         </tr>
+                         <tr>
+                             <td>DCIT 313</td>
+                             <td>Introduction to Artificial Intelligence</td>
+                         </tr>
+                         <tr>
+                             <td>DCIT 359</td>
+                             <td>Discrete Mathematics</td>
+                         </tr>
+                         <tr rowspan="2" class="elective"><td><h4>Electives:</h4></td></tr>
+                         <tr>
+                             <td>DCIT 307</td>
+                             <td>Mini-Project</td>
+                         </tr>
+                         <tr>
+                             <td>DCIT 309</td>
+                             <td>Embedded Systems and IoT</td>
+                         </tr>
+                         <tr>
+                             <td>DCIT 311</td>
+                             <td>Machine Learning</td>
+                         </tr>
+                     </tbody>
+                 </table>
+                 
+                 
+                 <h3>Second Semester</h3>
+                 <table>
+                     <thead>
+                         <th>
+                             Course Code
+                         </th>
+                         <th>
+                             Course Title 
+                         </th>
+                     </thead>
+                     <tbody>
+                         <tr rowspan="2" class="elective"><td><h4>Electives:</h4></td></tr>
+                         <tr>
+                             <td>DCIT 400</td>
+                             <td>Project</td>
+                         </tr>
+                         <tr>
+                             <td>DCIT 401</td>
+                             <td>Social, Legal, Ethical and Professional Issues</td>
+                         </tr>
+                         <tr>
+                             <td>DCIT 407</td>
+                             <td>Image Processing</td>
+                         </tr>
+                         <tr>
+                             <td>DCIT 306</td>
+                             <td>
+                                 Cloud Computing Numericaland Computational Methods
+                             </td>
+                         </tr>
+                         <tr>
+                             <td>DCIT 316</td>
+                             <td>
+                                 Computational models forSocial Media Mining
+                             </td>
+                         </tr>
+                     </tbody>
+                 </table>
+             </div>
+         </div>
+         
+         
+           <div class="course-content">
+             <button class="level" onclick="dropDown('l400', '1400drop');">
+                 Level Four Hundred
+                 <div class="drop" id="1400drop"><i class="fa-solid fa-caret-down" style="color: #ffffff;"></i></div>
+             </button>
+             <div class="courses end" id="l400">
+                 <h3>First Semester</h3>
+                 <table>
+                     <thead>
+                         <th>
+                             Course Code
+                         </th>
+                         <th>
+                             Course Title 
+                         </th>
+                     </thead>
+                     <tbody>
+                         <tr class="first">
+                             <td>DCIT 400</td>
+                             <td>Project</td>
+                         </tr>
+                         <tr>
+                             <td>DCIT 401</td>
+                             <td>Social, Legal, Ethical and Professional Issues</td>
+                         </tr>
+                         <tr>
+                             <td>DCIT 407</td>
+                             <td>Image Processing</td>
+                         </tr>
+                         <tr rowspan="2" class="elective"><td><h4>Electives:</h4></td></tr>
+                         <tr>
+                             <td>DCIT 403</td>
+                             <td>Designing Intelligent Agents</td>
+                         </tr>
+                         <tr>
+                             <td>DCIT 405</td>
+                             <td>Statistical Models and Methods for Data Science</td>
+                         </tr>
+                         <tr>
+                             <td>DCIT 407</td>
+                             <td>Image Processing</td>
+                         </tr>
+                         <tr>
+                             <td>DCIT 411</td>
+                             <td>
+                                 Bioinformatics
+                             </td>
+                         </tr>
+                         <tr>
+                             <td>DCIT 417</td>
+                             <td>
+                                 Network Performance Analysis and Modeling
+                             </td>
+                         </tr>
+                         <tr>
+                             <td>DCIT 423</td>
+                             <td>
+                                 Network Servers and Infrastructure
+                             </td>
+                         </tr>
+                     </tbody>
+                 </table>
+                 
+                 
+                 <h3>Second Semester</h3>
+                 <table>
+                     <thead>
+                         <th>
+                             Course Code
+                         </th>
+                         <th>
+                             Course Title 
+                         </th>
+                     </thead>
+                     <tbody>
+                         <tr>
+                             <td>DCIT 400</td>
+                             <td>Project</td>
+                         </tr>
+                         <tr>
+                             <td>DCIT 402</td>
+                             <td>Management Principles in Computing</td>
+                         </tr>
+                         <tr>
+                             <td>DCIT 418</td>
+                             <td>Systems and Network Security</td>
+                         </tr>
+                         <tr>
+                             <td>DCIT 428</td>
+                             <td>Wireless Systems and Networks</td>
+                         </tr>
+                         <tr rowspan="2" class="elective"><td><h4>Electives:</h4></td></tr>
+                         <tr>
+                             <td>DCIT 404</td>
+                             <td>Advanced Databases</td>
+                         </tr>
+                         <tr>
+                             <td>DCIT 406</td>
+                             <td>Advanced Computer Networks</td>
+                         </tr>
+                         <tr>
+                             <td>DCIT 408</td>
+                             <td>Compilers</td>
+                         </tr>
+                         <tr>
+                             <td>DCIT 426</td>
+                             <td>
+                                 Telecommunication Systems
+                             </td>
+                         </tr>
+                         <tr>
+                             <td>DCIT 412</td>
+                             <td>
+                                 Computer Vision
+                             </td>
+                         </tr>
+                         <tr>
+                             <td>DCIT 414</td>
+                             <td>
+                                 Data Mining and Warehousing
+                             </td>
+                         </tr>
+                         <tr>
+                             <td>DCIT 416</td>
+                             <td>
+                                 Digital Signal Processing
+                             </td>
+                         </tr>
+                         <tr>
+                             <td>DCIT 422</td>
+                             <td>
+                                 Information Visualization 
+                             </td>
+                         </tr>
+                     </tbody>
+                 </table>
+             </div>
+         </div>
+    </main>
+    
+    <footer>
+        <div class="footer-content">
+            <div class="fcontent">
+                <h3>Admissions</h3>
+                <p><a href="UG-CS-UndergraduateCourses.html">Undergraduate</a></p>               
+                <p><a href="">Graduate</a></p>
+                <p><a href="">International Students</a></p>
+                <p><a href="">Entry Requirements</a></p>
+                <p><a href="">Contact Us</a></p>
+            </div>
+            
+            <div class="fcontent">
+                <h3>Academics</h3>
+                <p><a href="">Undergraduate Courses</a></p>
+                <p><a href="UG-CS-Graduate-MPhil.html">Graduate Courses (MPhil Computer Science)</a></p>
+                <p><a href="UG-CS-Graduate-PhD.html">Graduate Courses (PhD)</a></p>
+                <p><a href="UG-CS-Graduate-MSc.html">Graduate Courses (MSc Computer Science)</a></p>
+                <p><a href="">Academic Calendar</a></p>
+                <p><a href="">Level 200 & 300 Timetable</a></p>
+                <p><a href="">Placement for level 200 Students</a></p>
+                <p><a href="UG-CS-Complaint-Form.html">Student Complaint Form</a></p>
+            </div>
+            
+           
+            <div class="fcontent">
+                <h3>About the Department</h3>
+                <p><a href="">Introducing DCS</a></p>
+                <p><a href="">Head of Department</a></p>
+                <p><a href="">Faculty</a></p>
+                <p><a href="">Events</a></p>
+            </div>
+            
+             
+            <div class="fcontent">
+                <h3>Research</h3>
+                <p><a href="">Research at DCS</a></p>
+                <p><a href="">Research Impact</a></p>
+                <p><a href="">Libraries</a></p>
+            </div>
+            
+            
+            <div class="fcontent">
+                <h3>Newsletters</h3>
+                <p>Stay updated with our latest</p>
+                <form> 
+                    <input type="text" placeholder="Enter Your Email Address">
+                    <button type="submit"><i class="fa-solid fa-arrow-right"></i></button>
+                </form>
+            </div>
+            
+            <div class="fcontent">
+                <h3>Contact Us</h3>
+                <p><b>Phone & Email</b></p>
+                <p><i class="fa-solid fa-phone" style="color: #ffffff;"></i> +233 123 456 789</p>
+                <p><i class="fa-solid fa-phone" style="color: #ffffff;"></i> +233 789 456 123</p>
+                <p><i class="fa-solid fa-envelope" style="color: #ffffff;"></i><a href="dcs@ug.edu.gh"> dcs@ug.edu.gh</a></p>
+                <p><b>Location</b></p>
+                <p>University Of Ghana, Legon Campus</p>
+                <p>Opposite Mathematics Department</p>
+            </div>
+        </div>
+        <div class="cright">
+            <p>Copyright &copy;2003 All rights reserved</p>
+            <p>
+                <i class="fa-brands fa-facebook-f"></i>
+                <i class="fa-brands fa-twitter"></i>
+                <i class="fa-brands fa-instagram"></i>
+            </p>
+        </div>
+    </footer>
+    <script src="Scripts/General-Scripts.js"></script>
+    <script src="Scripts/TableDropdowns.js"></script>
+</body>
+</html>
