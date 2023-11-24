@@ -1,0 +1,150 @@
+:root{
+    /* FONT SIZES */
+    --p-size: 3vh;
+    --h3-size: 4vh;
+    --big: 5vh;
+    --padding2: 3vh;
+    --padding1: 2.5vh;
+    --margin: 5vh;
+}
+
+
+body {
+    background: white;
+}
+
+main{
+    padding-top: 5rem;    
+}
+
+
+.heading{   
+    width: 100%;   
+    padding: 2rem;
+    background: url("../Images/research.jpg");
+    background-repeat: no-repeat;    
+    background-size: 100% 100%;
+    background-position: center bottom;
+    background-attachment: fixed;
+    background-clip: text;
+    -webkit-background-clip: text;
+    color: rgba(0,0,0,0.1);
+    text-shadow: 0 0 1rem rgba(0,0,0,0.5);
+    font-size: var(--big);
+    text-align: center;
+    margin: 1rem 0;
+}
+
+.course-content{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 0.5rem;
+    flex-direction: column;
+}
+
+.course-content .level{
+    background: rgb(0,51,90);
+    border: 0;
+    outline: 0;
+    text-align: left;
+    color: white;
+    padding: var(--padding1) var(--padding2);
+    font-size: var(--p-size);
+    box-shadow: 0 0.5vh 0.5vh 0.1vh #0005;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.course-content:last-child, .course-content .level .courses{
+    margin-bottom: var(--margin);
+}
+
+.courses, .course-content .level{
+    width: 70%;
+}
+
+.courses{
+    opacity: 0;
+    height: 0;    
+    overflow: hidden;
+    transition: opacity 0.2s ease-in-out;
+}
+
+.drop-down{
+    opacity: 1;
+    height: fit-content;
+    overflow: visible;
+}
+
+
+.courses table{
+    border-collapse: collapse;
+    width: 100%;
+    margin: 1rem 0;
+}
+
+.courses table th, .courses table td{
+    padding: 1rem;
+    font-size: var(--p-size);
+    text-align: center;
+}
+
+.courses table tr:nth-child(even){
+    background: rgba(192,192,192,0.2);
+}
+.courses table .elective{
+    background: transparent !important;
+}
+.courses table .elective:hover{
+    transform: none !important;
+    color: black !important;
+}
+
+.courses table .elective h4{
+    font-size: var(--p-size);
+}
+
+.courses table thead{
+    background: rgb(192,160,98);
+    color: white;
+}
+
+.courses table tr:not(:first-child), .first{
+    transition: 0.25s ease-in-out;
+}
+    
+.courses table tr:not(:first-child):hover,  .first:hover{
+    transform: scale(1.05);
+    color: rgb(192, 160, 98);
+}
+
+.courses h3{
+    font-size: var(--h3-size);
+    margin: 0.5rem 0;
+    color: rgb(192, 160, 98);
+}
+
+.drop-down{
+    display: block;
+    transition: 2s ease-in-out;
+}
+
+
+@media screen and (max-width: 576px){
+    :root{
+    /* FONT SIZES */
+        --p-size: 1rem;
+        --h3-size: 1.5rem;
+        --big: 1.2rem;
+        --padding2: 2rem;
+        --padding1: 1.5rem;
+        --margin: 3rem
+    }
+    
+    .courses, .course-content .level{
+        width: 100%;
+    }
+    
+}

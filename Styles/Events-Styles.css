@@ -1,0 +1,116 @@
+
+
+:root{
+    /* FONT SIZES */
+    --p-size: 3vh;
+    --h3-size: 4vh;
+    --big: 5vh;
+    
+}
+
+
+body {
+    background: white;
+}
+
+main{
+    padding-top: 5rem;    
+}
+
+
+.title{   
+    width: 100%;   
+    padding: 2rem;
+    background: url("../Images/research.jpg");
+    background-repeat: no-repeat;    
+    background-size: 100% 100%;
+    background-position: center bottom;
+    background-attachment: fixed;
+    background-clip: text;
+    -webkit-background-clip: text;
+    color: rgba(0,0,0,0.1);
+    text-shadow: 0 0 1rem rgba(0,0,0,0.5);
+    font-size: var(--big);
+    text-align: center;
+    margin: 1rem 0;
+}
+
+.event-container{
+    margin: 2rem;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+   
+}
+
+fieldset legend h3{
+    color: rgb(192,166,98);
+    margin: 0.5rem;
+    font-size: var(--h3-size);
+}
+
+
+.event, .event-info{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
+
+.event-board{
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-start;
+    flex-wrap: wrap;
+    width: 100%;    
+    padding: 2rem;
+}
+
+.event{    
+    flex-basis: 48%;
+    margin: 1rem 0;
+    height: 60vh;
+}
+
+.event img{
+    width: 100%;
+    height: 50%;
+}
+
+.event-info{
+    background: rgb(64,60,58);
+    color: white;
+    padding: 0.5rem;
+    text-align:  center;
+    height: 50%;
+    width: 100%;
+}
+
+
+.event-info h4{
+    margin-bottom: 1rem;
+    font-size: var(--h3-size);
+}
+
+.event-info p{
+    font-size: var(--p-size);
+}
+
+
+@media screen and (max-width: 576px){
+    :root{
+    /* FONT SIZES */
+        --p-size: 1rem;
+        --h3-size: 1.5rem;
+        --big: 2rem;
+    }
+    
+    .event-container{
+        margin: 1rem;
+    }
+    
+    .event{    
+        flex-basis: 100%;
+        height: fit-content;
+    }
+}

@@ -1,0 +1,274 @@
+:root{
+    /* FONT SIZES */
+    --p-size: 3vh;
+    --h3-size: 4vh;
+    --big: 5vh;
+    --small1: 1.5vh;
+    --small2: 1vh;
+    --padding2: 3vh;
+    --padding1: 2.5vh;
+    --margin: 5vh;
+    --x-move: 2vh;
+    --y1-move:-1.2vh;
+    --y2-move: -0.2rem;
+    --radio-size: 3px;
+    
+    /*  COLORS */
+    --form-scheme1: rgb(192,160,98);
+    --form-scheme2: rgba(0,0,0,0.5);
+}
+
+
+body {
+    background: white;
+}
+
+main{
+    padding-top: 5rem;    
+}
+
+
+.heading{   
+    width: 100%;   
+    padding: 2rem;
+    background: url("../Images/research.jpg");
+    background-repeat: no-repeat;    
+    background-size: 100% 100%;
+    background-position: center bottom;
+    background-attachment: fixed;
+    background-clip: text;
+    -webkit-background-clip: text;
+    color: rgba(0,0,0,0.1);
+    text-shadow: 0 0 1rem rgba(0,0,0,0.5);
+    font-size: var(--big);
+    text-align: center;
+    margin: 1rem 0;
+}
+
+
+
+.short-courses{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    padding: 1rem;
+    gap: var(--p-size);
+    margin: var(--p-size) 0;
+}
+
+.input-box{
+    width: max(50%, 20rem);
+    position: relative;
+}
+
+.input-box input,
+.input-box textarea{
+    width: 100%;
+    padding: var(--p-size) var(--h3-size);
+    border: 2px solid var(--form-scheme2);
+    outline: none;
+    border-radius: 5px;
+    font-size: var(--p-size);
+}
+
+.input-box span{
+    position: absolute;
+    left: 0;
+    padding: 1rem;
+    font-size: var(--p-size);    
+    transition: 0.5s;
+    color: var(--form-scheme2);
+}
+
+.input-box input:focus ~ span,
+.input-box input:valid ~ span,
+.input-box textarea:not(:placeholder-shown) ~ span,
+.input-box textarea:focus ~ span{
+    color: var(--form-scheme1);
+    background: white;
+    font-weight: bolder;
+    padding: 0 0.5rem;
+    font-size: var(--small1);
+    transform: translate(var(--x-move), var(--y2-move));
+    border-left: 2px solid var(--form-scheme1);
+    border-right: 2px solid var(--form-scheme1);
+}
+
+.input-box:nth-child(even) input:focus ~ span,
+.input-box:nth-child(even) input:valid ~ span{
+    background: var(--form-scheme1);
+    color: white;
+    border-radius: 5px;
+    padding: 0.2rem 0.5rem;
+    transform: translate(var(--x-move), var(--y1-move));
+}
+
+.input-box input:focus,
+.input-box input:valid,
+.input-box textarea:not(:placeholder-shown),
+.input-box textarea:focus{
+    border: 2px solid var(--form-scheme1);
+}
+
+
+.edu-background,
+.course-selection,
+.submit{
+    margin: 2rem 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: var(--p-size);
+    flex-direction: column;
+    width: max(50%, 20rem);
+}
+
+.course-selection{
+    width: max(60%, 20rem);
+}
+
+.submit button{
+    background: var(--form-scheme1);
+    padding: var(--small1) var(--p-size);
+    outline: 0;
+    font-size: var(--h3-size);
+    border: 0;
+    transition: 0.5s ease;
+}
+
+.submit button:hover{
+    background: transparent;
+    border: 2px solid rgb(192,160,98);
+    border-radius: 0;
+    color: rgb(192,160,98);
+    font-weight: bolder;
+    transform: scale(1.02);
+}
+
+
+
+.edu-background h3,
+.course-selection h3{
+    font-size: var(--h3-size);
+    color: var(--form-scheme1);
+    margin: 1rem 0;
+}
+
+.edu-background .radios,
+.course-selection .check-box-group{
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-start;
+    flex-wrap: wrap;
+    gap: 1rem;
+    width: 100%;
+    height: fit-content;
+    padding: 1.5rem;
+}
+
+.edu-background .radios label,
+.course-selection .check-box-group label{
+    flex-basis: 45%;
+    font-size: var(--p-size);
+    display: flex;
+    justify-content: space-between;
+    width: 90%;
+}
+
+.edu-background .radios label p,
+.course-selection .check-box-group label p{
+    width: 200%;
+    text-align: center;
+}
+
+
+label{
+    vertical-align: middle;
+    display: inline-block;
+    position: relative;
+}
+
+label input[type="radio"],
+label input[type="checkbox"]{
+    display: none;
+}
+
+label .radio-btn{
+    width: var(--p-size);
+    height: var(--p-size);
+    border: var(--radio-size) solid var(--form-scheme1);
+    border-radius: 50%;
+    position: absolute;
+    left: -10%;
+    top: 10%;    
+}
+
+label .check-box{
+    position: absolute;
+    width: var(--h3-size);    
+    height: var(--h3-size);
+    border: 1px solid var(--form-scheme1);
+    border-radius: 3px;
+    border: var(--radio-size) solid var(--form-scheme1);
+    color: white;
+    left: -20%;
+    top: 5%;
+}
+
+label .check-box:before{
+    position: absolute;
+    content: "\2713";
+    left: 50%;
+    top: 50%;
+    transition: 0.3s ease-in-out;
+    transform: translate(-50%, -50%) scale(0);
+}
+
+label input[type="checkbox"]:checked ~ .check-box{
+    background: var(--form-scheme1);
+}
+
+label input[type="checkbox"]:checked ~ .check-box:before{
+    transform: translate(-50%, -50%) scale(1.5);
+}
+
+
+label .radio-btn:after{
+    content: "";
+    width: var(--small2);
+    height: var(--small2);
+    background: var(--form-scheme1);
+    position: absolute;
+    left: 50%;
+    top: 50%;
+    border-radius: 50%;
+    transition: 0.3s ease-in-out;
+    transform: translate(-50%, -50%) scale(0);
+}
+
+label input[type="radio"]:checked ~ .radio-btn:after{
+    transform: translate(-50%, -50%) scale(1);
+}
+
+
+@media screen and (max-width: 576px){
+    :root{
+    /* FONT SIZES */
+        --p-size: 1rem;
+        --h3-size: 1.5rem;
+        --big: 1.5rem;
+        --small1: 0.8rem;
+         --small2: 0.5rem;
+        --x-move: 1rem;
+        --y1-move: -0.7rem;
+        --y2-move: -0.5rem;
+        --radio-size: 3px;
+    }
+    
+    .input-box textarea{
+        width: 100%;
+    }
+
+    
+}

@@ -1,0 +1,262 @@
+/* Basic Reset */
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    scroll-padding: 5rem;
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+}
+
+:root{
+    /* FONT SIZES */
+    --p-size: 3vh;
+    --h3-size: 4vh;
+    --logo: 50vw;
+}
+
+body {
+    background: rgb(157,156,155);
+}
+
+/* Utilities */
+.nowrap{
+    white-space: nowrap;
+}
+
+
+/* Header */
+
+header{
+    background: rgb(192,160,98);
+    width: 100%;
+    padding: 0.5rem;
+}
+
+.head, header, nav, nav ul{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    
+}
+.logo img{
+     width: min(40%, var(--logo));    
+     height: min(50%, var(--logo));
+}
+
+nav ul{
+    list-style: none;
+    
+}
+
+nav ul li a{
+    text-decoration: none;
+    color: white;
+    font-size: var(--p-size);
+    margin-right: 2vh;
+}
+
+.heading h3{
+    font-size: 2.6vh;
+}
+
+.menu-button{
+    display: none;
+}
+
+
+
+
+/* Footer */
+footer{
+    background: rgb(64,60,58);
+    color: white;
+    padding: 1rem;
+}
+.footer-content{
+    display: flex;
+    align-items: flex-start;
+    justify-content: space-between;
+    flex-wrap: wrap;
+}
+.fcontent{
+    flex-basis: 45%;
+    margin: 0.5rem;
+}
+
+.fcontent h3{
+    font-size: var(--h3-size);
+    margin-bottom: 1vh;
+}
+
+.fcontent p a{
+    color: white;
+    font-size: var(--p-size);
+    font-weight: lighter;
+    text-decoration: none;
+}
+
+.fcontent p:hover, .fcontent p a:hover{
+    color: rgb(192,160,98);
+} 
+
+.fcontent p{
+    font-size: var(--p-size);
+    font-weight: lighter;
+    line-height: 5vh;
+}
+
+
+.fcontent form{
+    display: flex;
+}
+.fcontent form input {
+    width: 90%;   
+    border: none;
+    outline: none;
+    border-radius: 0;
+    height: 3vh;
+    margin: 0.3rem 0;
+    padding: 2vh;
+    font-size: var(--p-size);
+    padding-left: 0.2rem;
+    background: transparent;
+    border-bottom: 1px solid white;
+    color: white;
+}
+
+.fcontent form input::placeholder{
+    font-size: var(--p-size);
+    color: rgba(255,255,255,0.5);
+    
+}
+.fcontent form button{
+    color: white;
+    border: none;
+    outline: none;
+    background: rgb(192,160,98);
+    width: 3.5vh;
+    height: 3vh;
+    margin: 0.32rem 0 0 0;  
+    padding: 2vh; 
+    font-size: var(--p-size);
+    border-bottom: 1px solid white;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+
+.cright p{
+    font-size: var(--p-size);
+    margin-bottom: 0.2rem;
+}
+.cright p i{
+    margin-left: 0.2rem;
+}
+
+
+
+@media screen and (max-width: 576px){
+    
+    :root{
+    /* FONT SIZES */
+        --p-size: 1rem;
+        --h3-size: 1.5rem;
+        --logo: 20rem;
+    }
+    
+    .logo img{
+        width: min(o0%, 15rem); 
+    }
+    
+    header, nav ul{
+        flex-direction: column;
+        z-index: 3;
+    }
+    
+    header{
+        position: fixed;
+    }
+    
+    nav{
+        position: absolute;
+        top: 0;
+        left: -100%;
+        transition: 0.5s ease;
+    }
+    
+    .nav-open{
+        left: 0%;
+    }
+    
+    nav ul{
+        background: rgb(0,51,90);        
+        width: 15rem;
+        display: flex;
+        justify-content: space-around;
+        align-items: center;
+        text-align: left;
+        z-index: 2;
+    }
+    nav ul li{
+        width: 100%;
+    }
+    
+    nav ul li a{
+        display: block;
+        width: 100%;
+        padding: 2rem 0;         
+        padding-left: 2rem;   
+    }
+    
+    nav ul li a:hover{
+        background: rgba(255,255,255,0.2);
+    }
+    
+    nav ul li:last-child{
+        margin-bottom: 30rem;
+    }
+    
+    .menu-button{
+        display: block;                
+    }
+    .menu-button button{
+        border: none;
+        outline: none;
+        background: transparent;
+        margin-right: 1rem;
+    }
+    .menu-button button i{
+        color: white;
+        font-size: 1.5rem;
+    }
+    
+    .footer-content{
+        display: flex;
+        justify-content: center;
+        align-items: center;    
+        flex-direction: column;
+    }
+    
+    .fcontent{
+        flex-basis: 70%;
+        width: 100%;
+    }
+    .fcontent p{
+        line-height: 2rem;
+    }
+    
+    .fcontent form input{
+        width: 80%;
+        margin: 1rem 0;
+    }
+    .fcontent form button{
+        width: 2rem;
+        height: 2rem;
+        margin: 0 0 1rem 0;
+    }
+    
+    .cright{
+        margin: 2rem 0 0 0;
+    }
+}
