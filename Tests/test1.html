@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+</head>
+<body>
+
+<label for="dropdown">Select an option:</label>
+<select id="dropdown" name="dropdown" onchange="showTable()">
+  <option value="option1">Option 1</option>
+  <option value="option2">Option 2</option>
+  <option value="option3">Option 3</option>
+</select>
+
+<div id="tableContainer" style="display:none;">
+  <table>
+    <tr>
+      <th>Header 1</th>
+      <th>Header 2</th>
+    </tr>
+    <tr>
+      <td>Data 1</td>
+      <td>Data 2</td>
+    </tr>
+    <!-- Add more rows as needed -->
+  </table>
+</div>
+
+<script>
+  function showTable() {
+    var dropdown = document.getElementById("dropdown");
+    var tableContainer = document.getElementById("tableContainer");
+
+    if (dropdown.value === "option1") {
+      tableContainer.style.display = "block";
+    } else {
+      tableContainer.style.display = "none";
+    }
+  }
+</script>
+
+</body>
+</html>
