@@ -31,12 +31,12 @@ The revamped website includes sections for admissions, academics, department inf
 
 1. **Clone the Repository**:
    ```sh
-   git clone https://github.com/Programming-Sai/SolarSystem.git
+   git clone https://github.com/Programming-Sai/UG-CS-Department-Revamp.git
    ```
 
 2. **Navigate to the Project Directory**:
    ```sh
-   cd SolarSystem
+   cd UG-CS-Department-Revamp
    ```
 
 3. **Open the HTML File**:
